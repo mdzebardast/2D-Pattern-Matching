@@ -1,0 +1,24 @@
+// 2D pattern matching program
+
+To run the app you should open the terminal and type the command like this: 
+
+ java -jar 2DPatternMatching.jar
+ 
+ I've prepared executable jar file. It does not require any inputs or patterns,
+ whatever it needs I put in the source code with sample data. For checking sample 
+ matrices please watch "SamplePatternAndMatrices" class.
+ 
+ About time and algorithm:
+ 
+ At first I used brute force algorithm to find the pattern and it took me rather 
+ one day to complete it. But its complexity was too high O(m*n*o*p)
+ (if the first array is m*n, and the second is o*p). 
+ 
+ Afterward I've made a decision to find a better way. And founding KMP string matching 
+ algorithm with o(n). With this approach it requires additional 2D array to 1D array conversion, 
+ so it takes a preprocessing phase to change these two arrays to 1d arrays with 
+ O(m * n + o * p) complexity. And also I made a change in KMP algorithm to check 
+ for not being any other form of pattern in matrices.
+ 
+ 
+ 
